@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pathwayspro.example/schemas/university_db_v1.schema.json",
+  "title": "University DB v1",
+  "type": "object",
+  "required": ["source_id", "university_key", "name", "source_urls", "departments", "last_scraped_at", "data_quality_flags", "crawl_stats"],
+  "properties": {
+    "source_id": {"type": "string"},
+    "university_key": {"type": "string"},
+    "name": {"type": "string"},
+    "source_urls": {"type": "array", "items": {"type": "string"}},
+    "last_scraped_at": {"type": "string"},
+    "data_quality_flags": {"type": "array", "items": {"type": "string"}},
+    "crawl_stats": {"type": "object"},
+    "departments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "name", "source_urls", "programs"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "name": {"type": "string"},
+          "source_urls": {"type": "array", "items": {"type": "string"}},
+          "programs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "canonical_url", "name", "source_urls", "last_scraped_at", "requirements_text", "requirements_normalized", "data_quality_flags", "trace"],
+              "properties": {
+                "source_id": {"type": "string"},
+                "canonical_url": {"type": "string"},
+                "name": {"type": "string"},
+                "program_summary": {"type": ["string", "null"]},
+                "degree_level": {"type": ["string", "null"]},
+                "degree_type": {"type": ["string", "null"]},
+                "study_mode": {"type": ["string", "null"]},
+                "duration_text": {"type": ["string", "null"]},
+                "duration_months": {"type": ["integer", "null"]},
+                "duration_years": {"type": ["number", "null"]},
+                "delivery_location": {"type": ["string", "null"]},
+                "intake_terms": {"type": "array", "items": {"type": "string"}},
+                "application_deadlines": {"type": "array", "items": {"type": "string"}},
+                "tuition": {"type": "object"},
+                "modules": {"type": "object"},
+                "fit_signals": {"type": "object"},
+                "requirements_text": {"type": "string"},
+                "requirements_normalized": {"type": "object"},
+                "source_urls": {"type": "array", "items": {"type": "string"}},
+                "trace": {"type": "object"},
+                "last_scraped_at": {"type": "string"},
+                "data_quality_flags": {"type": "array", "items": {"type": "string"}}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
