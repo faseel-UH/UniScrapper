@@ -1,0 +1,37 @@
+[
+  {
+    "university_key": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "primary_domain": "mit.edu",
+    "start_urls": ["https://catalog.mit.edu/degree-charts/", "https://gradadmissions.mit.edu/programs"],
+    "approved_subdomains": ["catalog.mit.edu", "gradadmissions.mit.edu"]
+  },
+  {
+    "university_key": "imperial",
+    "name": "Imperial College London",
+    "primary_domain": "imperial.ac.uk",
+    "start_urls": ["https://www.imperial.ac.uk/study/courses/", "https://www.imperial.ac.uk/study/courses/postgraduate/"],
+    "approved_subdomains": ["www.imperial.ac.uk"]
+  },
+  {
+    "university_key": "oxford",
+    "name": "University of Oxford",
+    "primary_domain": "ox.ac.uk",
+    "start_urls": ["https://www.ox.ac.uk/admissions/graduate/courses", "https://www.ox.ac.uk/admissions/undergraduate/courses"],
+    "approved_subdomains": ["www.ox.ac.uk"]
+  },
+  {
+    "university_key": "harvard",
+    "name": "Harvard University",
+    "primary_domain": "harvard.edu",
+    "start_urls": ["https://college.harvard.edu/academics", "https://gsas.harvard.edu/programs-study"],
+    "approved_subdomains": ["college.harvard.edu", "gsas.harvard.edu"]
+  },
+  {
+    "university_key": "cambridge",
+    "name": "University of Cambridge",
+    "primary_domain": "cam.ac.uk",
+    "start_urls": ["https://www.postgraduate.study.cam.ac.uk/courses", "https://www.undergraduate.study.cam.ac.uk/courses"],
+    "approved_subdomains": ["www.postgraduate.study.cam.ac.uk", "www.undergraduate.study.cam.ac.uk"]
+  }
+]

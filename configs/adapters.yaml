@@ -1,0 +1,41 @@
+{
+  "defaults": {
+    "allowed_domains": [],
+    "exclude_patterns": ["/events", "/calendar", "?page=", "?p="],
+    "strip_query_params": ["utm_source", "utm_medium", "utm_campaign", "ref", "session"],
+    "render_triggers": ["enable javascript", "loading...", "data-reactroot"],
+    "discovery": {"strategy": "auto", "enrichment_max_related_pages": 5}
+  },
+  "universities": {
+    "mit": {
+      "name": "Massachusetts Institute of Technology",
+      "allowed_domains": ["mit.edu", "catalog.mit.edu", "gradadmissions.mit.edu"],
+      "start_urls": ["https://catalog.mit.edu/degree-charts/", "https://gradadmissions.mit.edu/programs"],
+      "discovery": {"strategy": "auto"}
+    },
+    "imperial": {
+      "name": "Imperial College London",
+      "allowed_domains": ["imperial.ac.uk", "www.imperial.ac.uk"],
+      "start_urls": ["https://www.imperial.ac.uk/study/courses/"],
+      "discovery": {"strategy": "auto"}
+    },
+    "oxford": {
+      "name": "University of Oxford",
+      "allowed_domains": ["ox.ac.uk", "www.ox.ac.uk"],
+      "start_urls": ["https://www.ox.ac.uk/admissions/graduate/courses"],
+      "discovery": {"strategy": "auto"}
+    },
+    "harvard": {
+      "name": "Harvard University",
+      "allowed_domains": ["harvard.edu", "college.harvard.edu", "gsas.harvard.edu"],
+      "start_urls": ["https://college.harvard.edu/academics", "https://gsas.harvard.edu/programs-study"],
+      "discovery": {"strategy": "auto"}
+    },
+    "cambridge": {
+      "name": "University of Cambridge",
+      "allowed_domains": ["cam.ac.uk", "www.postgraduate.study.cam.ac.uk", "www.undergraduate.study.cam.ac.uk"],
+      "start_urls": ["https://www.postgraduate.study.cam.ac.uk/courses"],
+      "discovery": {"strategy": "auto"}
+    }
+  }
+}

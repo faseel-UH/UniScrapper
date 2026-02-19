@@ -1,0 +1,16 @@
+{
+  "quality_flags": {
+    "missing_deadline": "Program deadline is missing",
+    "missing_tuition": "Program tuition is missing",
+    "requirements_unparsed": "Requirements text exists but parser yielded empty normalization",
+    "needs_js_render": "Page likely requires JavaScript rendering",
+    "pdf_only": "Program data found only in PDF source"
+  },
+  "crawler": {
+    "default_depth_limit": 3,
+    "max_pages": 80,
+    "strip_query_params": ["utm_source", "utm_medium", "utm_campaign", "session", "ref"],
+    "pagination_keywords": ["page", "p", "offset", "start"],
+    "calendar_loop_keywords": ["calendar", "events", "month", "day", "year"]
+  }
+}
